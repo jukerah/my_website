@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urna eletronica</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section>
+        <div class="candidatos">
+            <h1>CANDIDATOS</h1>
+            <p><b>Vereador:</b> 91001 e 91002</p>
+            <p><b>Prefeito:</b> 10 e 25</p>
+        </div>
+        <div class="urna">
+            <div class="tela">
+                <div class="d-1">
+                    <div class="d-1-left">
+                        <div class="d-1-1">
+                            <p>SEU VOTO PARA</p>
+                        </div>
+                        <div class="d-1-2">
+                            <p></p>
+                        </div>
+                        <div class="d-1-3">
+                            <p>Número:</p>
+                            <div class="numero-voto">
+                                <div class="numero pisca"></div>
+                                <div class="numero"></div>
+                            </div>                            
+                        </div>
+                        <div class="d-1-4">
+                            <div>
+                                <p>Nome:</p>
+                                <p class="nome"></p>
+                            </div>
+                            <div>
+                                <p>Partido:</p>
+                                <p class="partido"></p>
+                            </div>
+                            <div class="nome-vp">
+                                <p>Vice-Prefeito:</p>
+                                <p class="vp"></p>
+                            </div>                            
+                        </div>
+                        <div class="box-aviso"></div>
+                    </div>
+                    <div class="d-1-right">
+                        <div class="canditado">
+                            <img class="img-p" src="" alt="">
+                            <p></p>
+                        </div>
+                        <div class="vice-prefeito">
+                            <img class="img-vp" src="" alt="">
+                            <p></p>
+                        </div>                        
+                    </div>
+                </div>
+                <div class="d-2">
+                    <p>Aparte a tecla:</p>
+                    <p>CONFIRMA para CONFIRMAR este voto</p>
+                    <p>CORRIGE para REINICIAR este voto</p>
+                </div>
+                <div class="tela--fim-voto">
+                    <div class="fim-1">
+                        <div class="fim-data"></div>
+                        <div>
+                            <img class="fim-img" src="img/bateria.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="fim-2">
+                        <h2>FIM</h2>
+                    </div>
+                    <div class="fim-3">
+                        <p>VOTOU</p>
+                    </div>
+                </div>
+            </div>
+            <div class="teclado">
+                <div class="teclado--selo">
+                    <div><img class="img-tribunal" src="img/tribunal.png" alt=""></div>
+                    <div><p class="nome-urna">UE 2020</p></div>
+                </div>
+                <div class="teclado--numero">
+                    <div class="teclado--linha">
+                        <div class="teclado--botao-numero btn-num" onclick="clicou('1')"><p>1</p></div>
+                        <div class="teclado--botao-numero btn-num" onclick="clicou('2')"><p>2</p></div>
+                        <div class="teclado--botao-numero btn-num" onclick="clicou('3')"><p>3</p></div>
+                    </div>
+                    <div class="teclado--linha">
+                        <div class="teclado--botao-numero btn-num" onclick="clicou('4')"><p>4</p></div>
+                        <div class="teclado--botao-numero btn-num" onclick="clicou('5')"><p>5</p></div>
+                        <div class="teclado--botao-numero btn-num" onclick="clicou('6')"><p>6</p></div>
+                    </div>
+                    <div class="teclado--linha">
+                        <div class="teclado--botao-numero btn-num" onclick="clicou('7')"><p>7</p></div>
+                        <div class="teclado--botao-numero btn-num" onclick="clicou('8')"><p>8</p></div>
+                        <div class="teclado--botao-numero btn-num" onclick="clicou('9')"><p>9</p></div>
+                    </div>
+                    <div class="teclado--linha">
+                        <div class="teclado--botao-numero btn-num" onclick="clicou('0')"><p>0</p></div>
+                    </div>
+                </div>
+                <div class="teclado--opcao">
+                    <div class="teclado--botao-opcao btn-branco" onclick="branco()"><p>BRANCO</p></div>
+                    <div class="teclado--botao-opcao btn-num" onclick="corrige()"><p>CORRIGE</p></div>
+                    <div class="teclado--botao-opcao btn-confirma" onclick="confirma()"><p>CONFIRMA</p></div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript" src="etapas.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
