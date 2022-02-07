@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #030615;
+    background-image: url("../assets/img/background_large.jpg");
+    background-size:  100vw;
+    background-repeat: no-repeat;
+
+    font-family: "Avenir Roman",sans-serif;
+    margin: 0 40px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+}
+
+.logo-header {
+    max-width: 80px;
+    position: fixed;
+}
+
+.header-container nav {
+    position: fixed;
+    right: 40px;
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.menu li a {
+    text-decoration: none;
+    list-style: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: .2s ease;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.btn-menu-assinar {
+    background-color: #0063e5;
+    color: #fff;
+}
+
+.btn-menu-assinar:hover {
+    background-color: #0483ee;
+}
+
+.btn-menu-entrar {
+    margin-left: 16px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
+}
+
+.btn-menu-entrar:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.header-container nav {
+    margin-top: 12px;
+}
+
+.logo-main {
+    max-width: 160px;
+    margin-top: 140px;
+}
+
+h1 {
+    font-size: 34px;
+    margin-top: 30px;
+    color: #fff;
+}
+
+.precos-assinaturas {
+    margin-top: 30px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.precos-assinaturas div:first-child {
+    margin-right: 30px;
+}
+
+.precos-assinaturas div p:first-child, .info-assinatura {
+    font-size: 13px;
+    color: #d3d3d3;
+}
+
+.precos-assinaturas div p span {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+.card-assinatura {
+    width: 300px;
+}
+
+.card-assinatura:first-child {
+    display: grid;
+}
+
+.card-assinatura a:last-child {
+    align-self: flex-end;
+    margin-top: 10px;
+}
+
+.btn-assinar {
+    display: block;
+    background-color: #0063e5;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 4px;
+    padding: 16.5px 14px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: .2s ease;
+}
+
+.btn-assinar:hover {
+    background-color: #0483ee;
+}
+
+.info-assinatura {
+    margin-bottom: 80px;
+    font-size: 10px;
+    margin-top: 25px;
+}
+
+.container-produtoras {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.produtoras {
+    max-width: 600px;
+    margin-top: 30px;
+}
+
+.arrow-down {
+    width: 50px;
+}
+
+@media (max-width: 770px) {
+    body {
+        background-image: url("../assets/img/background-small.jpg");
+        background-repeat: no-repeat;
+        margin: 0 15px;
+    }
+    #first-page {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .precos-assinaturas, .header-main {
+       display: flex;
+       flex-direction: column; 
+       text-align: center;
+    }
+    .logo-main {
+        margin-top: 255px;
+    }
+    h1 {
+        font-size: 22px;
+        margin-top: 18px;
+    }
+    h1 br {
+        display: none;
+    }
+    .header-container nav {
+        right: 15px;
+    }
+    .precos-assinaturas {
+        margin-top: 10px;
+    }
+    .precos-assinaturas div:first-child {
+        margin-right: 0;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        border-bottom: 2px solid rgb(48, 44, 44);
+    }
+    .produtoras {
+        max-width: 500px;
+    }
+    .info-assinatura {
+        text-align: center;
+    }
+    .produtoras {
+        display: none;
+    }
+    .arrow-down {
+        margin-top: -50px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        margin: 0 10px;
+    }
+    .header-container {
+        margin-top: 8px;
+    }
+    .main-container {
+        margin-top: -80px;
+    }
+    .header-container nav {
+        position: fixed;
+        right: 10px;
+    }
+    .logo-header {
+        max-width: 64px;
+    }
+    .menu li a {
+        padding: 8px 12px;
+        font-size: 14px;
+        font-family:'Times New Roman', Times, serif;
+        text-transform: none;
+    }
+    h1 {
+        font-size: 18px;
+        margin-top: 18px;
+    }
+    .precos-assinaturas div:first-child {
+        margin-right: 0;
+    }
+    .precos-assinaturas div p span {
+        font-size: 25px;
+    }
+    .arrow-down {
+        margin-top: -40px;
+        width: 50px;
+    }
+}

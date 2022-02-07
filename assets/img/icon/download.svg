@@ -1,0 +1,9 @@
+<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="#000" fill="none">
+
+ <g>
+  <title>Layer 1</title>
+  <path stroke="#ffffff" id="svg_1" d="m3,17l0,3a2,2 0 0 0 2,2l14,0a2,2 0 0 0 2,-2l0,-3"/>
+  <polyline stroke="#ffffff" id="svg_2" points="8 12 12 16 16 12"/>
+  <line stroke="#ffffff" id="svg_3" y2="16" y1="2" x2="12" x1="12"/>
+ </g>
+</svg>
