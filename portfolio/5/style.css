@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("img/bg.svg");
+    background-size: cover;
+}
+
+h1 {
+    color: rgb(255, 255, 0);
+    font-weight: 100;
+    margin: 20px 0;
+    font-size: 70px;
+    font-family: 'Sedgwick Ave Display', cursive;
+    text-shadow: 2px 2px 10px rgb(255, 255, 255);
+}
+
+.area {
+    width: 300px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 15px;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.area .item, .item-fim {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+    font-weight: bold;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.item:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.line-winner, .line-winner:hover {
+    background-color: rgb(21, 138, 41);
+}
+
+.item.t, .item-fim.t {
+    border-top: 1px solid #FFF;
+}
+
+.item.l, .item-fim.l {
+    border-left: 1px solid #FFF;
+}
+
+.item.r, .item-fim.r {
+    border-right: 1px solid #FFF;
+}
+
+.item.b, .item-fim.b {
+    border-bottom: 1px solid #FFF;
+}
+
+.info {
+    margin-top: 30px;
+    padding: 10px;
+}
+
+.infoitem {
+    display: flex;
+    font-family: 'Bangers', cursive;
+    justify-content: center;
+    align-items: center;
+}
+
+.infotitulo {
+    color: #FFF;
+}
+
+.info-vez {
+    width: 300px;
+    height: 60px;
+    border: 1px dotted #FFF;
+    font-size: 35px;
+    color: #FFF;
+}
+
+.info-winner {
+    display: none;
+    font-size: 45px;
+    color: rgb(255, 251, 0);
+}
+
+.info-winner img {
+    width: 50px;
+    margin-right: 15px;
+    display: none;
+}
+
+.reset {
+    border: 2px solid rgb(201, 199, 88);
+    background-color: rgb(240, 237, 106);
+    font-size: 40px;
+    font-family: 'Bangers', cursive;
+    color: rgb(66, 66, 66);
+    font-weight: 700;
+    padding: 10px 80px;
+    margin-top: 40px;
+    border-radius: 10px;
+    display: none;
+    -webkit-animation: neon-bg 1.5s ease-in-out infinite alternate;
+    -moz-animation: neon-bg 1.5s ease-in-out infinite alternate;
+    animation: neon-bg 1.5s ease-in-out infinite alternate;
+    cursor: pointer;
+}
+   
+@keyframes neon-bg {
+    from {
+        box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
+    }
+    to {
+        box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228DFF, 0 0 35px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF, 0 0 75px #228DFF;
+    }
+}
+
+@-moz-keyframes neon-bg {
+    from {
+        box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
+    }
+    to {
+        box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228DFF, 0 0 35px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF, 0 0 75px #228DFF;
+    }
+}  
+  
+@keyframes neon-bg {
+    from {
+        box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
+    }
+    to {
+        box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228DFF, 0 0 35px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF, 0 0 75px #228DFF;
+    }
+}
